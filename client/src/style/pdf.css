@@ -1,0 +1,74 @@
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #262626;
+  color: #fff;
+  cursor: pointer;
+  max-width: 520px;
+  user-select: none;
+}
+
+.file-item:hover {
+  background: #262626;
+}
+
+.file-item--loading {
+  opacity: .7;
+  cursor: default;
+}
+
+.file-item__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.file-item__meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.file-item__name {
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-item__size {
+  font-size: 12px;
+  margin-top: 3px;
+  opacity: .7;
+}
+
+.file-item__action {
+  font-size: 16px;
+  opacity: .85;
+}
+
+.divAx {
+  width: 36px;
+  /* یا هر اندازه‌ای که می‌خوای */
+  height: 36px;
+  border-radius: 20%;
+  /* تبدیلش به دایره */
+  overflow: hidden;
+  /* هر چیزی خارج از دایره بره زیر قیچی */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divAx img {
+  width: 54px !important;
+  height: 54px !important;
+}

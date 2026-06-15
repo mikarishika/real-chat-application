@@ -1,0 +1,829 @@
+body {
+    /* height: 100vh;
+    width: 100vw; */
+    height: 100%;
+    width: 100%;
+    /* بهتر است ۱۰۰ باشد */
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    /* جلوگیزی از اسکرول اضافه بدنه */
+    /* background: linear-gradient(150deg, rgb(0, 102, 255), rgba(203, 4, 248, 0.712), rgba(21, 181, 202, 0.799), rgb(0, 102, 255)); */
+}
+@font-face {
+    font-family: "MyFont";
+    src: url("../assets/fonts/Jost-Light.ttf") format("truetype");
+}
+.grid-container {
+    position: relative;
+    display: grid;
+    min-width: 900px;
+    /* ستون اول بین ۲۰۰ تا ۳۰۰ پیکسل نوسان کند، ستون دوم بقیه فضا */
+    grid-template-columns: minmax(200px, 280px) 1fr;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    /* یک فاصله کوچک بین دو ستون اصلی */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*? ---------------------------------- div1 ---------------------------------- */
+.sidebar-div1-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.information-bar-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #26262679;
+}
+
+.information-bar {
+    color: gray;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 10px;
+    border-radius: 10px;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(21, 32, 44);
+}
+
+.menu-profile {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #161616ee;
+    /* background-color: #262626e1; */
+}
+
+.menu-profile-up-icons img {
+    width: 30px;
+    background-color: white;
+    border-radius: 3px;
+    transition: 0.1s ease;
+}
+
+.menu-profile-up-icons img:hover {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), -0px 0px 10px white;
+
+}
+
+.menu-profile-up-icons button {
+    transition: 0.1s ease;
+    border: none;
+    background-color: transparent;
+    padding: 3px;
+}
+
+
+.menu-profile-img {
+    border-radius: 13px;
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+    image-rendering: crisp-edges;
+}
+
+.menu-profile-button {
+    font-size: 10px;
+    width: 5%;
+    height: 5%;
+    border-radius: 35px;
+}
+
+.div1,
+.menuBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* هم‌اندازه ظرف */
+    height: 100%;
+    border-radius: 10px;
+    /* overflow: auto; */
+    /* overflow-x: hidden; */
+}
+
+.div1 {
+    position: relative;
+    /* box-shadow: 5px 2px 10px rgba(255, 255, 255, 0.3); */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.979);
+    overflow: auto;
+    overflow-x: hidden;
+}
+.search-box-div1{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.div1-search-box {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: 3px;
+    left: 5px; */
+    background-color: rgba(135, 135, 135, 0.096);
+    border-radius: 15px;
+    height: fit-content;
+    border: 2px solid rgba(128, 128, 128, 0.539);
+    padding: 4px 4px 4px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    direction: auto;
+    unicode-bidi: plaintext;
+}
+
+.menuBar {
+    display: grid;
+    grid-template-rows: 1fr repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    padding: 0%;
+    background-color: rgba(255, 255, 255, 0.979);
+    /* background-color: #000000; */
+}
+
+.menuBar p {
+    width: 100%;
+    height: fit-content;
+    transition: ease;
+}
+
+.menuBar p:hover {
+    width: 100%;
+    background-color: rgba(186, 186, 186, 0.256);
+    height: fit-content;
+}
+
+.menubar-profile-photo {
+    border-radius: 9px 9px 0px 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+.div1-header {
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 10px 1fr;
+    column-gap: 3px;
+    row-gap: 30px;
+}
+
+.div1-header-menu {
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.chatListp {
+    margin-top: 4px;
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.258);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.div1::-webkit-scrollbar {
+    width: 7px;
+    /* باریک و ظریف */
+    height: 20vh;
+}
+
+/* ۳. خودِ دستگیره اسکرول (Thumb) */
+.div1::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #0066ff, #cb04f8);
+}
+
+.under-div1 {
+    font-size: 14px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 1fr;
+    padding: 10px;
+    transition: 0.9s ease-out;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 42px;
+    /* ستون اول به اندازه عکس (۶۰ پیکسل)، ستون دوم بقیه فضا برای متن */
+    /* border-top: 1px solid rgba(128, 128, 128, 0.320);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.320); */
+}
+
+.under-div1:hover {
+    /* background: linear-gradient(90deg, rgba(52, 51, 51, 0.979)); */
+    /* box-shadow: 2px 2px 5px black, 2px -2px 5px black; */
+    /* border-radius: 42px; */
+    position: relative;
+}
+
+.under-div-photo {
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* .under-div1 p {
+    display: flex;
+    justify-self: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: fit-content;
+    max-width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px; 
+} */
+
+/* .div2 {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 20px;
+} */
+
+.msg-time {
+    font-size: 12px;
+    display: flex;
+    background-color: red;
+}
+
+/*? ----------------------------------------------------------- div2 ---------------------------------------------------- */
+
+.div2 {
+    display: grid;
+    grid-template-rows: 80px 1fr 60px;
+    border-radius: 49px;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 9999 !important; */
+    /* pointer-events: all !important; */
+
+}
+
+.chat-header-div2 {
+    display: grid;
+    /* grid-template-rows: 100%; */
+    align-items: center;
+    border-radius: 48px 48px 0px 0px;
+    border: 0px solid gray;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(0, 64, 255), rgba(141, 28, 228, 0.635));
+}
+
+/* ----------------------- scroller ------- */
+.chat-text-div2::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-text-div2::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.chat-text-div2::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+.chat-text-div2::-webkit-scrollbar-thumb:hover {
+    background-color: #cccccc;
+}
+
+.chat-text-div2 {
+    overflow-x: hidden;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    border: 0px solid gray;
+    margin-top: 20px;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 400px;
+}
+.chat-text-div2::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.chat-text-div2::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+.chat-text-div2::-webkit-scrollbar-thumb:hover {
+    background: #1956f1;
+}
+
+/* ----------------------- scroller -------- */
+.profile-header-div2 {
+    height: 87%;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.button-div2 {
+    background-color: rgba(255, 255, 255, 0.616);
+    margin-right: 15px;
+    border: none;
+    height: 27px;
+    border-radius: 33px;
+    justify-self: end;
+}
+
+.button-div2:hover {
+    background-color: rgba(255, 255, 255, 0.893);
+
+}
+
+.sd2 {
+    font-family: "MyFont";
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    max-width: 70%;
+    min-width: 2.5%;
+    word-wrap: break-word;
+}
+
+.sd2.sent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 93, 255);
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+.sd2.received {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+.sd2-span.sent,
+.sd2-span.received{
+    direction: rtl;
+    left:1px;
+}
+.sd2-span.sent{
+    display: flex;
+}
+.sd2-span.received{
+    margin: none;
+    /* margin-left: 0px;     */
+}
+.message-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: none;
+}
+
+/* استایل مخصوص پیام‌های خودت (سمت راست) */
+.sent {
+    /* margin-right: 10px; */
+    align-self: flex-end;
+}
+
+.received {
+    /* margin-left: 10px; */
+    align-self: flex-start;
+}
+
+#span1-div2 {
+    background-color: rgb(22, 71, 232);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 10px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 15px 15px 15px 0px;
+}
+
+#span2-div2 {
+    align-self: flex-end;
+    /* Alignment for YOU (Right) */
+    text-align: right;
+    max-width: 70%;
+    margin-top: 5px;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    background-color: rgb(6, 93, 255);
+    padding-right: 10px;
+    margin-right: 10px;
+    border-radius: 15px 15px 0px 15px;
+}
+
+.input-div2 {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 49px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.input-div2 span {
+    margin: 2px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* .input-div2 span:hover {
+    background-color: rgb(0, 128, 255);
+    transition: 0.1s ease;
+} */
+
+#input-vorodi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    /* color: white; */
+    font-size: 18px;
+    flex-grow: 1;
+    height: 60%;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+
+}
+
+#input-vorodi::placeholder {
+    /* color: rgb(255, 255, 255); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-div2-icons {
+    background-color: white;
+    transition: 0.2s ease-out;
+    border-radius: 5px;
+}
+
+.input-div2-icons:hover {
+    border-radius: 10px;
+}
+
+#button-input-div2 {
+    font-size: 27px;
+    margin-right: 17px;
+    margin-left: 3px;
+    border: none;
+    padding-top: 5px;
+    border-radius: 49%;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(6, 93, 255); */
+    color: white;
+    width: 40px;
+
+    /* border: 5px; */
+}
+
+#button-input-div2:hover {
+
+    background-color: rgb(27, 106, 255);
+}
+
+.custom-menu {
+    position: absolute;
+    background: #2c2c2e;
+    color: white;
+    border-radius: 8px;
+    padding: 5px 0;
+    width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.menu-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background: #ff3b30;
+}
+
+.custom-context-menu {
+    position: fixed !important;
+    background: linear-gradient(rgba(255, 82, 255, 0.817), rgb(21, 116, 232));
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    min-width: 120px;
+}
+
+/* .menu-item {
+    padding: 8px 20px;
+    transition: background-color 0.2s;
+    font-size: 14px;
+    text-align: center;
+} */
+.main-msg-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* حالا اینجا راحت به متن پدینگ بده */
+.text-box {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #333;
+    /* یا هر رنگی که دوست داری */
+    color: white;
+    max-width: fit-content;
+}
+
+/* اینجا هم به عکس پدینگ بده (مثلاً صفر باشه که عکس کامل چسبیده باشه) */
+.file-box {
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.file-box.sent img,
+.file-box.sent video,
+.file-box.received img,
+.file-box.received video {
+    max-width: 300px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    display: block;
+    background-color: #cb0d0d22;
+}
+
+.file-box.sent img,
+.file-box.sent video {
+    /* border-radius: 15px 15px 0px 15px; */
+    border-radius: 15px 15px 0px 0px;
+    /* border: 1.9px solid rgba(11, 23, 46, 0.553); */
+}
+
+.file-box.received img,
+.file-box.received video {
+    border-radius: 15px 15px 0px 0px;
+    /* border: 1.9px solid #e1e1e1; */
+}
+
+
+.my-img {
+    cursor: pointer;
+}
+
+.my-audio {
+    width: 240px;
+    /* اندازه ثابت */
+    /* تغییر نکند با تغییر صفحه */
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    /* none معتبر نیست برای radius */
+}
+
+.test {
+    position: relative;
+    padding: 3px;
+    direction: auto;
+    unicode-bidi: plaintext;
+}
+
+
+
+
+/* .test span {
+    padding: 0px 13px 0px 3px;
+} */
+
+.custom-context-menu:hover {
+    background: linear-gradient(rgba(255, 82, 255, 0.582), rgba(21, 116, 232, 0.559));
+
+}
+
+/* ---------------------------------- modal --------------------------------- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.947);
+    /* background: radial-gradient(rgb(223, 98, 15),rgba(145, 2, 255, 0.635)); */
+    /* background: linear-gradient(90deg, rgb(0, 64, 255), rgba(141, 28, 228, 0.635)); */
+    /* padding: 20px; */
+    border-radius: 15px;
+    /* width: 360px; */
+    text-align: center;
+    color: white;
+
+}
+
+.modal-h3 {
+    text-shadow: white 3px 3px 9px;
+    color: black;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 15px;
+    object-fit: contain;
+
+}
+
+.modal-input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4444446e;
+    background: #ffffff;
+    color: rgb(26, 26, 26);
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+}
+
+#modal-button {
+    background: linear-gradient(90deg, rgb(0, 157, 255), rgba(205, 28, 228, 0.635));
+    border: none;
+    color: white;
+    /* margin-right: auto;
+    margin-left: 83%; */
+    margin-inline-start: 92%;
+    padding: 4.5px 4px 1px 4px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.image-button-modal {
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 29px;
+    height: 29px;
+}
+
+#modal-button-2 {
+    background: linear-gradient(90deg, rgb(0, 64, 255), rgba(141, 28, 228, 0.635));
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin-bottom: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 20, 20, 0.918);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20000;
+    /* cursor: zoom-out; */
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: zoom 0.3s ease;
+    object-fit: contain;
+    padding: 0%;
+    box-shadow: none;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.poshesh {
+    padding: 0px 0px 10px 0px;
+    background: #262626;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.poshesh.sent{
+    border-radius:15px 15px 0px 15px ;
+}
+.poshesh.received{
+    border-radius:15px 15px 15px 0px ;
+}
+.poshesh-span {
+    direction: rtl;
+    display: inline-block;
+    min-width:100%;
+    margin-bottom: 1px;
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    font-size: 7.4px;
+    opacity: 0.8;
+    /* padding: 2px 5px; */
+    border-radius: 5px;
+}
+
+.dynamic-text {
+    padding: 6px;
+    display: inline-block;
+    width: 100%;
+    unicode-bidi: plaintext;
+    text-align: start;
+    direction: rtl;
+}

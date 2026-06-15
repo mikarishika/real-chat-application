@@ -1,0 +1,93 @@
+GET http://localhost:3001/api/messages
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/api/messages
+Content-Type: application/json
+
+
+###
+DELETE http://localhost:3001/api/messages:id
+Content-Type: application/json
+
+{
+      "_id": {
+    "$oid": "69b6b3d3ff46e08eab3230f0"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# GET http://localhost:3000/signUp
+# Content-Type: application/json
+
+# {
+#     "name":"kasra",
+#     "pwd":"khan"
+# }
+# ###
+
+# POST http://localhost:3000/login
+# Content-Type: application/json
+
+# {
+#     "name":"kasra",
+#     "pwd":"khan"
+# }
+
+# ###
+
+# POST http://localhost:3000/refresh
+# Content-Type: application/json
+
+# {
+#     "jwt":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NjgyMTYzODgsImV4cCI6MTc2ODMwMjc4OH0.gHZu2HGHkjdrzZNTfYOQSoC1rE5btgxutIc-cJ8p67g"
+# }
