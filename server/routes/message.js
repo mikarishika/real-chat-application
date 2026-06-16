@@ -400,6 +400,8 @@ router.post('/messages/mark-seen', async (req, res) => {
 router.delete('/messages/:id', async (req, res) => {
     try {
         const messageId = req.params.id;
+        const Conversation = require('../model/conversation');
+        const User = require('../model/users');
 
         const message = await Message.findById(messageId);
 
@@ -407,16 +409,38 @@ router.delete('/messages/:id', async (req, res) => {
             return res.status(404).json({ message: "پیام پیدا نشد" });
         }
 
+        const { senderId, receiverId } = message;
+
         // حذف فایل از سرور
         if (message.file && message.file.url) {
             const filePath = path.join(__dirname, '..', message.file.url);
-
-            if (fs.existsSync(filePath)) {
-                fs.unlinkSync(filePath);
-            }
+            if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
         }
 
         await Message.findByIdAndDelete(messageId);
+
+        // ✅ آپدیت lastMessage تو conversation
+        const sender = await User.findOne({ username: senderId });
+        const receiver = await User.findOne({ username: receiverId });
+
+        if (sender && receiver) {
+            const conversation = await Conversation.findOne({
+                participants: { $all: [sender._id, receiver._id] }
+            });
+
+            if (conversation) {
+                // آخرین پیام باقیمونده رو پیدا کن
+                const lastMsg = await Message.findOne({
+                    $or: [
+                        { senderId, receiverId },
+                        { senderId: receiverId, receiverId: senderId }
+                    ]
+                }).sort({ createdAt: -1 });
+
+                conversation.lastMessage = lastMsg ? (lastMsg.text || "فایل") : "";
+                await conversation.save();
+            }
+        }
 
         res.json({ message: 'پیام حذف شد' });
 

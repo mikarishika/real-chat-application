@@ -63,7 +63,8 @@ router.get("/user/:username", async (req, res) => {
         // ✅ myUnread رو با username key بخون
         const result = conversations.map(conv => {
             const obj = conv.toObject();
-            obj.myUnread = obj.unreadCounts?.[username] || 0;
+            const unread = obj.unreadCounts?.[username];
+            obj.myUnread = (typeof unread === 'number' && unread > 0) ? unread : 0;
             return obj;
         });
 

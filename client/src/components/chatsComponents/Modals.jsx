@@ -501,12 +501,12 @@ export const ChatMessagesModal = ({
                                         </div>
                                     ) : (
                                         <div style={{
-                                            color: 'black',
+                                            color: 'white',
+                                            backgroundColor: 'transparent',
                                             padding: '5px',
-                                            backgroundColor: 'white',
                                             borderRadius: '4px'
                                         }}>
-                                            this file doesn’t known
+                                            the format of this file dosent support just send (img,video,pdf)
                                         </div>
                                     )}
 
@@ -573,8 +573,8 @@ export const IsModalOpen = ({
         <>
             {isModalOpen && (
                 <div className="modal">
-                    <div className="modal-content" style={{minWidth:'280px',maxWidth:'50%',paddingInline:'13px'}}>
-                        <button id="modal-button"   onClick={() => { setIsModalOpen(false); setPreviewUrl(null); setSelectedFile(null); }}>
+                    <div className="modal-content" style={{ minWidth: '280px', maxWidth: '50%', paddingInline: '13px' }}>
+                        <button id="modal-button" onClick={() => { setIsModalOpen(false); setPreviewUrl(null); setSelectedFile(null); }}>
                             <img className='image-button-modal' src={assets.cancelIcon} alt="img"></img>
                         </button>
 

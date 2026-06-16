@@ -379,6 +379,7 @@ body {
 }
 
 .sd2 {
+    position: relative;
     font-family: "MyFont";
     display: flex;
     flex-direction: row;
@@ -387,9 +388,11 @@ body {
     border-radius: 12px;
     margin-bottom: 8px;
     max-width: 70%;
-    min-width: 2.5%;
+    min-width: 4.5%;
     word-wrap: break-word;
 }
+
+
 
 .sd2.sent{
     display: flex;
@@ -402,6 +405,9 @@ body {
 }
 
 .sd2.received {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f1f1f1;
     color: black;
     align-self: flex-start;
@@ -805,13 +811,12 @@ body {
     direction: rtl;
     display: inline-block;
     min-width:100%;
-    margin-bottom: 1px;
+    /* margin-bottom:6px; */
     position: absolute;
     bottom: 2px;
-    right: 5px;
+    right: 5px;white-space: nowrap;
     font-size: 7.4px;
     opacity: 0.8;
-    /* padding: 2px 5px; */
     border-radius: 5px;
 }
 

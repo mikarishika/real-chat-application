@@ -194,7 +194,7 @@ function RealChat() {
             })
         );
         // ✅ از socket استفاده کن تا DB هم reset بشه — بعد از refresh هم صفر میمونه
-        socket.emit("mark_chat_read", {
+        socket.emit("mark_read", {
             username,
             otherUsername: otherUser.username,
         });
