@@ -677,12 +677,9 @@ body {
 }
 
 .modal-content {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.947);
-    /* background: radial-gradient(rgb(223, 98, 15),rgba(145, 2, 255, 0.635)); */
-    /* background: linear-gradient(90deg, rgb(0, 64, 255), rgba(141, 28, 228, 0.635)); */
-    /* padding: 20px; */
     border-radius: 15px;
-    /* width: 360px; */
     text-align: center;
     color: white;
 
@@ -698,7 +695,13 @@ body {
     max-height: 300px;
     margin-bottom: 15px;
     object-fit: contain;
+}
 
+.image-button-modal {
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 29px;
+    height: 29px;
 }
 
 .modal-input {
@@ -721,20 +724,13 @@ body {
     background: linear-gradient(90deg, rgb(0, 157, 255), rgba(205, 28, 228, 0.635));
     border: none;
     color: white;
-    /* margin-right: auto;
-    margin-left: 83%; */
     margin-inline-start: 92%;
     padding: 4.5px 4px 1px 4px;
     border-radius: 15px;
     cursor: pointer;
 }
 
-.image-button-modal {
-    background: rgb(0, 0, 0);
-    border-radius: 50px;
-    width: 29px;
-    height: 29px;
-}
+
 
 #modal-button-2 {
     background: linear-gradient(90deg, rgb(0, 64, 255), rgba(141, 28, 228, 0.635));

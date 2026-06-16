@@ -115,35 +115,7 @@ export const ProfileModal = forwardRef(({ onClose, profileImages, setProfileImag
             console.error("خطا در حذف عکس:", err);
         }
     };
-    // const handleDelete = async () => {
-    //     if (profileImages.length === 0) return;
 
-    //     const imageToDelete = profileImages[currentIndex];
-
-    //     try {
-    //         // 1. حذف از دیتابیس (مهم‌ترین بخش)
-    //         await axios.delete("http://localhost:3001/api/user/profile-image", {
-    //             data: {
-    //                 username,
-    //                 url: imageToDelete.replace("http://localhost:3001", "")
-    //             }
-    //         });
-
-    //         // 2. حذف از UI
-    //         const newImages = profileImages.filter((_, i) => i !== currentIndex);
-    //         setProfileImages(newImages);
-
-    //         // 3. تنظیم index
-    //         setCurrentIndex(prev =>
-    //             prev >= newImages.length
-    //                 ? Math.max(0, newImages.length - 1)
-    //                 : prev
-    //         );
-
-    //     } catch (err) {
-    //         console.error("خطا در حذف عکس:", err);
-    //     }
-    // };
     const handlePrev = () => {
         setCurrentIndex(prev => prev === 0 ? profileImages.length - 1 : prev - 1);
     };
@@ -601,8 +573,8 @@ export const IsModalOpen = ({
         <>
             {isModalOpen && (
                 <div className="modal">
-                    <div className="modal-content">
-                        <button id="modal-button" onClick={() => { setIsModalOpen(false); setPreviewUrl(null); setSelectedFile(null); }}>
+                    <div className="modal-content" style={{minWidth:'280px',maxWidth:'50%',paddingInline:'13px'}}>
+                        <button id="modal-button"   onClick={() => { setIsModalOpen(false); setPreviewUrl(null); setSelectedFile(null); }}>
                             <img className='image-button-modal' src={assets.cancelIcon} alt="img"></img>
                         </button>
 
@@ -623,7 +595,7 @@ export const IsModalOpen = ({
                                 <audio src={previewUrl} className="modal-audio" alt="preview" />
 
                             ) : (
-                                <div style={{ color: 'black', padding: '5px' }}>this file dosent supported </div>
+                                <div style={{ color: 'black', padding: '5px' }}></div>
                             )
                         )}
 
