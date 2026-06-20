@@ -14,7 +14,7 @@ A modern real-time chat application built with **Node.js, React, and MongoDB**, 
 - 🎨 Responsive and clean UI with React
 
 ---
-Supported File Types
+## Supported File Types
 
 Users can send and receive the following file types through the chat:
 
