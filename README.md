@@ -41,3 +41,41 @@ A modern real-time chat application built with **Node.js, React, and MongoDB**, 
 ## 📁 Project Demo
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/b49cf378-ddd2-4e83-8e2d-83be082b3b95" />
+
+# Installation & Setup
+
+1. Download the project files and open the project folder in Visual Studio Code.
+
+2. Open a terminal in the project's root directory and run the following command to install all required dependencies:
+
+```bash
+npm run install:all
+```
+
+3. After the installation is complete, start the entire application by running:
+
+```bash
+npm run dev
+```
+
+4. Once the project is running, a local URL will appear in the terminal. Click the link (or open it in your browser) to access the Login and Sign Up page.
+
+5. You can either create a new account or log in using one of the pre-seeded users included with the project.
+
+## Seeded Users
+
+Example usernames:
+
+* emma.thompson
+* olivia.miller
+* sophia.davis
+
+You can also use any other users defined in the seed file located in the backend folder.
+
+### Default Password
+
+All seeded users share the same password:
+
+```text
+123456
+```
