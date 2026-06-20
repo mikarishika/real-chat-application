@@ -55,6 +55,7 @@ Login route
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/cea02dd9-0b81-4a79-91b9-947242fb9be2" />
 
+
 SignUp route 
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/888a287e-5612-44c6-aa8d-ff9d0aa00031" />
