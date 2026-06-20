@@ -40,7 +40,7 @@ A modern real-time chat application built with **Node.js, React, and MongoDB**, 
 
 ## 📁 Project Demo
 
-<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/b49cf378-ddd2-4e83-8e2d-83be082b3b95" />
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/cea02dd9-0b81-4a79-91b9-947242fb9be2" />
 
 # Installation & Setup
 
