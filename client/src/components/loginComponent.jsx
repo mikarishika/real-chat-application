@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../style/login.css";
 import axios from "axios";
+import StarfieldBackground from "./chatsComponents/StarfieldBackground";
+
 
 function ComponentLogin({ onLogin }) {
     const [showDiv, setShowDiv] = useState(false);
     const [message, setMessage] = useState("");
     const [isSignupMode, setIsSignupMode] = useState(true);
-
-    const loginBg  = "repeating-radial-gradient(rgba(255, 217, 0, 0.8), rgba(181, 0, 222, 0.93))";
-    const signupBg = "repeating-radial-gradient(rgba(24, 213, 255, 0.86), rgb(61, 7, 255))";
 
     const navigate = useNavigate();
 
@@ -70,16 +69,15 @@ function ComponentLogin({ onLogin }) {
         <div
             className="login-page"
             style={{
-                background: isSignupMode ? signupBg : loginBg,
                 position: "fixed",
                 top: 0, left: 0, right: 0, bottom: 0,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                transition: "background 0.8s ease",
                 overflow: "hidden",
             }}
         >
+            <StarfieldBackground colorMode={isSignupMode ? "emerald":"violet"  } />
             <div className="login-form">
                 <p id="para">{isSignupMode ? "REGISTER" : "WELCOME"}</p>
 
