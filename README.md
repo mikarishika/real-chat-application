@@ -58,7 +58,7 @@ All supported files can be uploaded and shared directly within the chat interfac
 
 SignUp route && Login route
 
-<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/888a287e-5612-44c6-aa8d-ff9d0aa00031" />
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/83383c6b-d454-4c89-b96c-745419a76bae" />
 
 ---
 
