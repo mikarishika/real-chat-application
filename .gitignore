@@ -1,0 +1,6 @@
+node_modules
+.env
+uploads
+server/uploads
+mongo_data
+request.rest
