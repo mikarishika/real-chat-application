@@ -147,19 +147,21 @@ You can either create a new account, or log in with one of the pre-seeded demo u
 
 ## 👤 Seeded Users
 
-Example usernames you can log in with right away:
+Before logging in, run the seed file to create the sample users:
 
-- `emma.thompson`
-- `olivia.miller`
-- `sophia.davis`
+```bash
+node server/seeds/seed.js
+```
 
-> More seeded users are available in the seed file located in the `backend` folder.
+After the seeding process is complete, you can log in using any of these email addresses:
+
+- `pouya.najafi@example.com`
+- `reza.sharifi@example.com`
+- `navid.rostami@example.com`
 
 ### Default Password
-All seeded users share the same password:
-```text
-123456
-```
+
+Use the default password (123456) defined in the seed file (`server/seeds/seed.js`) to log in. 
 
 ---
 
