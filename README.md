@@ -77,17 +77,17 @@ All files are uploaded and shared right inside the conversation — no separate 
 <table>
   <tr>
     <td align="center">
-      <img src="./docs/sign-up.png" width="300"/>
+      <img src="./docs/sign-up.png" width="400"/>
       <br/>
       <b>Sign Up</b>
     </td>
     <td align="center">
-      <img src="./docs/login.png" width="300"/>
+      <img src="./docs/login.png" width="400"/>
       <br/>
       <b>Login</b>
     </td>
     <td align="center">
-      <img src="./docs/main-page.png" width="300"/>
+      <img src="./docs/main-page.png" width="400"/>
       <br/>
       <b>Main Page</b>
     </td>
@@ -95,17 +95,17 @@ All files are uploaded and shared right inside the conversation — no separate 
 
   <tr>
     <td align="center">
-      <img src="./docs/profile-page.png" width="300"/>
+      <img src="./docs/profile-page.png" width="400"/>
       <br/>
       <b>Profile Page</b>
     </td>
     <td align="center">
-      <img src="./docs/setting-page.png" width="300"/>
+      <img src="./docs/setting-page.png" width="400"/>
       <br/>
       <b>Settings Page</b>
     </td>
     <td align="center">
-      <img src="./docs/Screenshot 2026-11-01 181622.png" width="300"/>
+      <img src="./docs/Screenshot 2026-11-01 181622.png" width="400"/>
       <br/>
       <b>Additional Screenshot</b>
     </td>
