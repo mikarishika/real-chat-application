@@ -71,6 +71,11 @@ All files are uploaded and shared right inside the conversation — no separate 
 | **Postman** | API testing |
 
 ---
+## Video demo 
+
+https://github.com/user-attachments/assets/f0c6fe06-9462-44b4-b438-6f309e6dd54b
+
+---
 
 ## 📸 Screenshots
 
