@@ -24,6 +24,7 @@ A modern real-time chat application built with **Node.js, React, and MongoDB**, 
 - 🔐 **Secure backend** — built with Node.js & Express
 - 📦 **MongoDB integration** — persistent chat history & user data
 - 🎨 **Responsive UI** — clean, modern interface built with React
+- 🎨 **12 Custom Themes** — personalize the chat experience with 12 unique themes
 
 ---
 
