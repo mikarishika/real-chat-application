@@ -4,3 +4,4 @@ uploads
 server/uploads
 mongo_data
 request.rest
+package-lock.json
