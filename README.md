@@ -72,35 +72,46 @@ All files are uploaded and shared right inside the conversation — no separate 
 
 ---
 
-📸 Screenshots
+## 📸 Screenshots
 
-<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <img src="./docs/sign-up.png" width="300"/>
+      <br/>
+      <b>Sign Up</b>
+    </td>
+    <td align="center">
+      <img src="./docs/login.png" width="300"/>
+      <br/>
+      <b>Login</b>
+    </td>
+    <td align="center">
+      <img src="./docs/main-page.png" width="300"/>
+      <br/>
+      <b>Main Page</b>
+    </td>
+  </tr>
 
-Sign Up & Login
+  <tr>
+    <td align="center">
+      <img src="./docs/profile-page.png" width="300"/>
+      <br/>
+      <b>Profile Page</b>
+    </td>
+    <td align="center">
+      <img src="./docs/setting-page.png" width="300"/>
+      <br/>
+      <b>Settings Page</b>
+    </td>
+    <td align="center">
+      <img src="./docs/Screenshot 2026-11-01 181622.png" width="300"/>
+      <br/>
+      <b>Additional Screenshot</b>
+    </td>
+  </tr>
+</table>
 
-<img src="./docs/sign-up.png" width="800" alt="Sign Up Page"/>
-
-<img src="./docs/login.png" width="800" alt="Login Page"/>
-
-Main Page
-
-<img src="./docs/main-page.png" width="800" alt="Main Page"/>
-
-Profile Page
-
-<img src="./docs/profile-page.png" width="800" alt="Profile Page"/>
-
-Settings Page
-
-<img src="./docs/setting-page.png" width="800" alt="Settings Page"/>
-
-Additional Screenshots
-
-<img src="./docs/Screenshot 2026-11-01 181622.png" width="800" alt="Additional Screenshot 1"/>
-
-<img src="./docs/Screenshot 2026-11-01 181746.png" width="800" alt="Additional Screenshot 2"/>
-
-</div>
 ---
 
 ## ⚙️ Installation & Setup
