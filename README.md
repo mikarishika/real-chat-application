@@ -72,18 +72,35 @@ All files are uploaded and shared right inside the conversation — no separate 
 
 ---
 
-## 📸 Project Demo
+📸 Screenshots
 
 <div align="center">
 
-### Sign Up & Login
-<img width="800" alt="SignUp and Login route" src="https://github.com/user-attachments/assets/cea02dd9-0b81-4a79-91b9-947242fb9be2" />
+Sign Up & Login
 
-### Chat Interface
-<img width="800" alt="Chat interface" src="https://github.com/user-attachments/assets/83383c6b-d454-4c89-b96c-745419a76bae" />
+<img src="./docs/sign-up.png" width="800" alt="Sign Up Page"/>
+
+<img src="./docs/login.png" width="800" alt="Login Page"/>
+
+Main Page
+
+<img src="./docs/main-page.png" width="800" alt="Main Page"/>
+
+Profile Page
+
+<img src="./docs/profile-page.png" width="800" alt="Profile Page"/>
+
+Settings Page
+
+<img src="./docs/setting-page.png" width="800" alt="Settings Page"/>
+
+Additional Screenshots
+
+<img src="./docs/Screenshot 2026-11-01 181622.png" width="800" alt="Additional Screenshot 1"/>
+
+<img src="./docs/Screenshot 2026-11-01 181746.png" width="800" alt="Additional Screenshot 2"/>
 
 </div>
-
 ---
 
 ## ⚙️ Installation & Setup
